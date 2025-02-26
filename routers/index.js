@@ -1,12 +1,6 @@
 const express = require("express");
 const route = express.Router();
-const {
-  create,
-  getAll,
-  getById,
-  update,
-  remove,
-} = require("../service/database");
+const { create, getAll, getById, update, remove } = require("../service");
 
 route.post("/:table", async (req, res) => {
   try {

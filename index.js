@@ -1,9 +1,9 @@
-const express = require('express')
-const app = express()
-const port = 8001
+const express = require("express");
+const app = express();
+const port = 8001;
 
-app.use("/", require("./controllers/router"))
+app.use("/", require("./routers"));
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+  console.log(`Your application running on http://localhost:${port}`);
+});
